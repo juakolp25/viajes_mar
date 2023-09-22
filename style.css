@@ -42,8 +42,8 @@
 }
 
 .toggler {
-    padding: 0.25rem 0.75rem;
-    font-size: 1.25rem;
+    padding: 0.15rem 0.55rem;
+    font-size: 2rem;
     line-height: 1;
     color: var(--blanco-);
     background-color: transparent;
