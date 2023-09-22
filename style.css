@@ -1,8 +1,8 @@
 :root{
-    --primary-: #3774f8;
-    --secundary-: rgb(207, 205, 205);
+    --primary-: rgb(70, 187, 206);
+    --secundary-: rgb(152, 205, 226);
     --padding-: 10px;
-    --blanco-: rgba(231, 236, 247, 0.952);
+    --blanco-: rgba(227, 237, 251);
 }
 
 *{
@@ -16,7 +16,7 @@
     padding-bottom: 0.3125;
     margin-right: 1rem;
     font-size: 1.25rem;
-    color: var(--secundary-);
+    color: var(--blanco-);
     text-decoration: none;
     white-space: nowrap;
 }
@@ -32,7 +32,7 @@ body{
 }
 
 .text-bgvm{
-    color: var(--secundary-);
+    color: var(--blanco-);
 }
 
 .container{
@@ -49,11 +49,11 @@ body{
 .section_pack{
     background-color: var(--primary-);
     border-radius: 3px;
-    border: 1px var(--secundary-) solid;
+    border: 1px var(--blanco-) solid;
     width: 100%;
     height: auto;
     padding: var(--padding-);
-    color: var(--secundary-);
+    color: var(--blanco-);
     text-align: center;
     margin-top: 5px;
 }
