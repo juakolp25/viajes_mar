@@ -1,5 +1,6 @@
 :root{
-    --primary-: rgb(70, 187, 206);
+    --primary-: rgb(70, 102, 206);
+    --fondo-: rgb(70, 187, 206);
     --secundary-: rgb(152, 205, 226);
     --padding-: 10px;
     --blanco-: rgba(227, 237, 251);
@@ -12,13 +13,43 @@
 }
 
 .link_menu {
-    padding-top: 0.3125rem;
-    padding-bottom: 0.3125;
+    display: flex;
     margin-right: 1rem;
     font-size: 1.25rem;
     color: var(--blanco-);
     text-decoration: none;
     white-space: nowrap;
+    align-items: center;
+}
+
+.link_menu>i{
+    margin: auto;
+}
+
+.item_despegable{
+    display: block;
+    width: 100%;
+    padding: var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x);
+    clear: both;
+    font-weight: 400;
+    color: var(--blanco-);
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    border-radius: var(--bs-dropdown-item-border-radius,0);
+}
+
+.toggler {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    color: var(--blanco-);
+    background-color: transparent;
+    border: 1px solid var(--blanco-);
+    border-radius: 0.375rem;
+    transition: box-shadow 0.15s ease-in-out;
 }
 
 body{
@@ -31,7 +62,7 @@ body{
     background-color: var(--primary-);
 }
 
-.text-bgvm{
+#text-bgvm, .text-bgvm{
     color: var(--blanco-);
 }
 
@@ -47,7 +78,7 @@ body{
 }
 
 .section_pack{
-    background-color: var(--primary-);
+    background-color: var(--fondo-);
     border-radius: 3px;
     border: 1px var(--blanco-) solid;
     width: 100%;

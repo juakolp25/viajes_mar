@@ -13,37 +13,37 @@
     <nav class="navbar bgvm fixed-top">
         <div class="container-fluid">
             <a class="link_menu" href="#">
-                <img src="logo.png" alt="Logo" width="40" height="34" class="d-inline-block align-text-top">
-                Viajes Mar
+                <img src="logo.png" alt="Logo" width="40" height="44" class="d-inline-block align-text-top">
+                <i>Viajes Mar</i>
             </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          <button class="toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" id="text-bgvm"></span>
           </button>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas offcanvas-end" style="width: 250px;" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
             <div class="offcanvas-header  text-bgvm bgvm">
               <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Viajes Mar</h5>
               <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-            <div class="offcanvas-body text-bgvm bgvm">
+            <div class="offcanvas-body text-bgvm bgvm" id="text-bgvm">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                  <a class="link_menu" aria-current="page" href="#">Inicio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Socios</a>
+                  <a class="link_menu href="#">Socios</a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a class="link_menu dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Meses
                   </a>
                   <ul class="dropdown-menu" id="bgvm">
-                    <li><a class="dropdown-item" href="#">Octubre</a></li>
-                    <li><a class="dropdown-item" href="#">Noviembre</a></li>
-                    <li><a class="dropdown-item" href="#">Diciembre</a></li>
+                    <li><a class="item_despegable" href="#">Octubre</a></li>
+                    <li><a class="item_despegable" href="#">Noviembre</a></li>
+                    <li><a class="item_despegable" href="#">Diciembre</a></li>
                   </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Nosotros</a>
+                    <a class="link_menu" href="#">Nosotros</a>
                   </li>
               </ul>
             </div>
@@ -174,10 +174,21 @@
 
     <footer class="navbar bg-dark">
         <div class="container-fluid">
-            <a class="navbar-link link_menu" href="#">
-                <img src="logo.png" alt="Logo" width="40" height="34" class="d-inline-block align-text-top">
-                Viajes Mar
-            </a>
+          <a class="navbar-link link_menu" href="#">
+            <img src="logo.png" alt="Logo" width="40" height="34" class="d-inline-block align-text-top">
+            <i>Viajes Mar</i>
+          </a>
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="navbar-link link_menu" href="#">
+              &copy; |
+              </a>
+            <li class="nav-item">
+              <a class="navbar-link link_menu" href="#">
+                Preguntas Frecuentes
+              </a>
+            </li>
+          </ul>
           <ul class="nav">
             <li class="nav-item">
               <a class="link_menu" aria-current="page" href="#">
@@ -186,12 +197,7 @@
             </li>
             <li class="nav-item">
               <a class="link_menu" href="#">
-                <i class="bi bi-facebook"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="link_menu" href="#">
-                <i class="bi bi-whatsapp"></i>
+                <i class="bi bi-google"></i>
               </a>
             </li>
           </ul>
